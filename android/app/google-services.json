@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "462015591264",
+    "firebase_url": "https://delivery-morenope.firebaseio.com",
+    "project_id": "delivery-morenope",
+    "storage_bucket": "delivery-morenope.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462015591264:android:120a3d31acf61326d52405",
+        "android_client_info": {
+          "package_name": "com.example.delivery_morenope"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462015591264-i3m417cs6esj17ulvrr6o5t2s8a6snmf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCveuiB3F0L5zFq9hxEnCLhXAeXiXHYv4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462015591264-i3m417cs6esj17ulvrr6o5t2s8a6snmf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
