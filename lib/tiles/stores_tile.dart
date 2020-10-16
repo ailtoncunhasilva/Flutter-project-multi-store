@@ -81,6 +81,7 @@ class DeliciaTile extends StatelessWidget {
                       ? 'Estabelecimento ABERTO'
                       : 'Estabelecimento FECHADO',
                   style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: snapshot.data['status'] == true
                           ? Colors.greenAccent[700]
                           : Colors.red),
@@ -123,6 +124,7 @@ class OboticarioTile extends StatelessWidget {
                       ? 'Estabelecimento ABERTO'
                       : 'Estabelecimento FECHADO',
                   style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: snapshot.data['status'] == true
                           ? Colors.greenAccent[700]
                           : Colors.red),
@@ -166,6 +168,7 @@ class MinhaCoxinhaFavoritaTile extends StatelessWidget {
                       ? 'Estabelecimento ABERTO'
                       : 'Estabelecimento FECHADO',
                   style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: snapshot.data['status'] == true
                           ? Colors.greenAccent[700]
                           : Colors.red),
@@ -209,6 +212,7 @@ class MagoEspetionhoTile extends StatelessWidget {
                       ? 'Estabelecimento ABERTO'
                       : 'Estabelecimento FECHADO',
                   style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: snapshot.data['status'] == true
                           ? Colors.greenAccent[700]
                           : Colors.red),
@@ -253,6 +257,7 @@ class DaLenaTile extends StatelessWidget {
                       ? 'Estabelecimento ABERTO'
                       : 'Estabelecimento FECHADO',
                   style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: snapshot.data['status'] == true
                           ? Colors.greenAccent[700]
                           : Colors.red),
@@ -297,6 +302,7 @@ class DindinTile extends StatelessWidget {
                       ? 'Estabelecimento ABERTO'
                       : 'Estabelecimento FECHADO',
                   style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: snapshot.data['status'] == true
                           ? Colors.greenAccent[700]
                           : Colors.red),
@@ -341,6 +347,7 @@ class PizzaMaitaTile extends StatelessWidget {
                       ? 'Estabelecimento ABERTO'
                       : 'Estabelecimento FECHADO',
                   style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: snapshot.data['status'] == true
                           ? Colors.greenAccent[700]
                           : Colors.red),
@@ -385,6 +392,7 @@ class LeChefTile extends StatelessWidget {
                       ? 'Estabelecimento ABERTO'
                       : 'Estabelecimento FECHADO',
                   style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: snapshot.data['status'] == true
                           ? Colors.greenAccent[700]
                           : Colors.red),
@@ -429,6 +437,7 @@ class LojaJ extends StatelessWidget {
                       ? 'Estabelecimento ABERTO'
                       : 'Estabelecimento FECHADO',
                   style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: snapshot.data['status'] == true
                           ? Colors.greenAccent[700]
                           : Colors.red),
@@ -473,6 +482,7 @@ class LojaL extends StatelessWidget {
                       ? 'Estabelecimento ABERTO'
                       : 'Estabelecimento FECHADO',
                   style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: snapshot.data['status'] == true
                           ? Colors.greenAccent[700]
                           : Colors.red),
@@ -517,6 +527,7 @@ class LojaM extends StatelessWidget {
                       ? 'Estabelecimento ABERTO'
                       : 'Estabelecimento FECHADO',
                   style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: snapshot.data['status'] == true
                           ? Colors.greenAccent[700]
                           : Colors.red),
@@ -561,6 +572,7 @@ class LojaN extends StatelessWidget {
                     ? 'Estabelecimento ABERTO'
                     : 'Estabelecimento FECHADO',
                 style: TextStyle(
+                    fontWeight: FontWeight.bold,
                     color: snapshot.data['status'] == true
                         ? Colors.greenAccent[700]
                         : Colors.red),
@@ -602,6 +614,7 @@ class LojaO extends StatelessWidget {
                       ? 'Estabelecimento ABERTO'
                       : 'Estabelecimento FECHADO',
                   style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: snapshot.data['status'] == true
                           ? Colors.greenAccent[700]
                           : Colors.red),
@@ -646,6 +659,7 @@ class LojaP extends StatelessWidget {
                       ? 'Estabelecimento ABERTO'
                       : 'Estabelecimento FECHADO',
                   style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: snapshot.data['status'] == true
                           ? Colors.greenAccent[700]
                           : Colors.red),
