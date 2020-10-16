@@ -35,7 +35,6 @@ class ApalhocaTile extends StatelessWidget {
                       ? 'Estabelecimento ABERTO'
                       : 'Estabelecimento FECHADO',
                   style: TextStyle(
-                      fontWeight: FontWeight.bold,
                       color: snapshot.data['status'] == true
                           ? Colors.greenAccent[700]
                           : Colors.red),
