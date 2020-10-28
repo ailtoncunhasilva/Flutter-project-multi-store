@@ -87,7 +87,7 @@ class MyAppBar extends StatelessWidget {
                         'Olá, ${!model.isLoggedIn() ? "" : model.userData['name']}',
                         style: TextStyle(
                           fontSize: 18,
-                          color: Colors.white
+                          color: Colors.white,
                         ),
                       ),
                       Container(
@@ -161,7 +161,8 @@ class MyFlexibleAppBar extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
-                      fontSize: 20
+                      fontSize: 20,
+                      fontFamily: 'SansitaSwashed',
                     )
                   ),
                   Text(
@@ -191,7 +192,8 @@ class MyFlexibleAppBar extends StatelessWidget {
                   Text(
                     'mobile',
                     style: TextStyle(
-                      color: Colors.white
+                      color: Colors.white,
+                      fontFamily: 'SansitaSwashed',
                     ),
                   ),
                   SizedBox(height: 1),
