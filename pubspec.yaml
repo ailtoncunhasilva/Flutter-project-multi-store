@@ -32,6 +32,7 @@ dependencies:
   url_launcher: ^5.1.1
   bloc_pattern: ^1.5.2
   rxdart: ^0.22.1
+  flutter_launcher_icons: ^0.8.1
 
 dev_dependencies:
   flutter_test:
@@ -108,3 +109,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "icons/iconapp.jpg"
