@@ -169,7 +169,8 @@ class MyFlexibleAppBar extends StatelessWidget {
                     'Moreno-PE',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 20
+                      fontSize: 20,
+                      fontFamily: 'Anton',
                     )
                   )
                 ]
