@@ -88,7 +88,6 @@ class MyAppBar extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 18,
                           color: Colors.white,
-                          fontFamily: 'Anton',
                         ),
                       ),
                       Container(
