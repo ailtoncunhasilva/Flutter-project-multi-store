@@ -88,6 +88,7 @@ class MyAppBar extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 18,
                           color: Colors.white,
+                          fontFamily: 'Anton',
                         ),
                       ),
                       Container(
@@ -120,8 +121,8 @@ class MyAppBar extends StatelessWidget {
                     !model. isLoggedIn() ? 'Entre ou cadastre-se' : 'Sair',
                     style: TextStyle(
                       fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white
+                      color: Colors.white,
+                      fontFamily: 'Anton',
                     )
                   ),
                   onTap: (){
@@ -162,7 +163,6 @@ class MyFlexibleAppBar extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                       fontSize: 20,
-                      fontFamily: 'SansitaSwashed',
                     )
                   ),
                   Text(
@@ -186,7 +186,7 @@ class MyFlexibleAppBar extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 32,
                       color: Colors.white,
-                      fontWeight: FontWeight.bold
+                      fontWeight: FontWeight.bold,
                     )
                   ),
                   Container(height: 1, width: 44, color: Colors.white,),
