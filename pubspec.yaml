@@ -79,6 +79,10 @@ flutter:
    - images/logomagodoespetinho.jpg
    - images/logooboticario.jpg 
    - images/logominhacoxinhafavorita.jpg
+   - images/imagemmoreno.jpg
+   - images/imagemmoreno1.jpg
+   - images/imagemmoreno2.jpg
+   - images/imagemmoreno3.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

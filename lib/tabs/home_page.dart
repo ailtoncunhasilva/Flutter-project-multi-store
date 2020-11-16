@@ -146,6 +146,12 @@ class MyFlexibleAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage('images/imagemmoreno3.jpg'),
+          fit: BoxFit.cover
+        ),
+      ),
       padding: const EdgeInsets.all(8.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
