@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
             backgroundColor: Colors.transparent,
             title: MyAppBar(),
             pinned: true,
-            expandedHeight: 150,
+            expandedHeight: 160,
             flexibleSpace: FlexibleSpaceBar(
               background: MyFlexibleAppBar(),
             ),
@@ -151,7 +151,7 @@ class MyAppBar extends StatelessWidget {
             child: GestureDetector(
               child: Text(!model.isLoggedIn() ? 'Entre ou cadastre-se' : 'Sair',
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 16,
                     color: Colors.white,
                     //fontFamily: 'Anton',
                   )),
@@ -181,40 +181,50 @@ class MyFlexibleAppBar extends StatelessWidget {
               image: AssetImage('images/imagemmoreno3.jpg'), fit: BoxFit.cover),
         ),
         padding: const EdgeInsets.all(8.0),
-        child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Container(
-                padding: EdgeInsets.only(left: 16, bottom: 16),
-                child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: <Widget>[
-                      Text('Shopping/Delivery',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                            fontSize: 20,
-                          )),
-                      Text('Moreno-PE',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontFamily: 'Anton',
-                          ))
-                    ]),
-              ),
-              Container(
-                  padding: EdgeInsets.only(right: 10, bottom: 16),
-                  child: Column(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Container(
+                    padding: EdgeInsets.only(left: 16, bottom: 16),
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          Text(
+                            'Shopping/Delivery',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              fontSize: 20,
+                            ),
+                          ),
+                          Text(
+                            'Moreno-PE',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontFamily: 'Anton',
+                            ),
+                          )
+                        ]),
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(right: 10, bottom: 16),
+                    child: Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: <Widget>[
-                        Text('AC',
-                            style: TextStyle(
-                              fontSize: 32,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            )),
+                        Text(
+                          'AC',
+                          style: TextStyle(
+                            fontSize: 32,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                         Container(
                           height: 1,
                           width: 44,
@@ -233,8 +243,19 @@ class MyFlexibleAppBar extends StatelessWidget {
                           width: 44,
                           color: Colors.white,
                         ),
-                      ]))
-            ]),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              child: Center(
+                child: Icon(Icons.expand_less, color: Colors.white),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
