@@ -30,16 +30,7 @@ class ApalhocaTile extends StatelessWidget {
                       child: _buildItens(context, 'images/lojaA.jpg',
                           'Restaurante e Pizzaria', 'O Palhoção')),
                 ),
-                Text(
-                  snapshot.data['status'] == true
-                      ? 'Estabelecimento ABERTO'
-                      : 'Estabelecimento FECHADO',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: snapshot.data['status'] == true
-                          ? Colors.greenAccent[700]
-                          : Colors.red),
-                )
+                _textStatus(snapshot),
               ],
             );
           }
@@ -76,16 +67,7 @@ class DeliciaTile extends StatelessWidget {
                         'Restaurante e Pizzaria', 'Pizzaria Deliciosa'),
                   ),
                 ),
-                Text(
-                  snapshot.data['status'] == true
-                      ? 'Estabelecimento ABERTO'
-                      : 'Estabelecimento FECHADO',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: snapshot.data['status'] == true
-                          ? Colors.greenAccent[700]
-                          : Colors.red),
-                )
+                _textStatus(snapshot),
               ],
             );
           }
@@ -119,16 +101,7 @@ class OboticarioTile extends StatelessWidget {
                       child: _buildItens(context, 'images/lojaC.jpg',
                           'Perfumaria', 'O Boticário')),
                 ),
-                Text(
-                  snapshot.data['status'] == true
-                      ? 'Estabelecimento ABERTO'
-                      : 'Estabelecimento FECHADO',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: snapshot.data['status'] == true
-                          ? Colors.greenAccent[700]
-                          : Colors.red),
-                )
+                _textStatus(snapshot),
               ],
             );
           }
@@ -163,16 +136,7 @@ class MinhaCoxinhaFavoritaTile extends StatelessWidget {
                       child: _buildItens(context, 'images/lojaD.jpg',
                           'Lanchonete', 'Minha\nEmpada Favorita')),
                 ),
-                Text(
-                  snapshot.data['status'] == true
-                      ? 'Estabelecimento ABERTO'
-                      : 'Estabelecimento FECHADO',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: snapshot.data['status'] == true
-                          ? Colors.greenAccent[700]
-                          : Colors.red),
-                )
+                _textStatus(snapshot),
               ],
             );
           }
@@ -207,16 +171,7 @@ class MagoEspetionhoTile extends StatelessWidget {
                       child: _buildItens(context, 'images/lojaE.jpg',
                           'Espetinho', 'Magão do Espetinho')),
                 ),
-                Text(
-                  snapshot.data['status'] == true
-                      ? 'Estabelecimento ABERTO'
-                      : 'Estabelecimento FECHADO',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: snapshot.data['status'] == true
-                          ? Colors.greenAccent[700]
-                          : Colors.red),
-                )
+                _textStatus(snapshot),
               ],
             );
           }
@@ -252,16 +207,7 @@ class DaLenaTile extends StatelessWidget {
                       child: _buildItens(context, 'images/lojaF.jpg',
                           'Hamburgueria', 'Helena\nHamburgueria')),
                 ),
-                Text(
-                  snapshot.data['status'] == true
-                      ? 'Estabelecimento ABERTO'
-                      : 'Estabelecimento FECHADO',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: snapshot.data['status'] == true
-                          ? Colors.greenAccent[700]
-                          : Colors.red),
-                )
+                _textStatus(snapshot),
               ],
             );
           }
@@ -297,16 +243,7 @@ class DindinTile extends StatelessWidget {
                       child: _buildItens(context, 'images/lojaG.jpg',
                           'Lanchonete', 'Gourmet')),
                 ),
-                Text(
-                  snapshot.data['status'] == true
-                      ? 'Estabelecimento ABERTO'
-                      : 'Estabelecimento FECHADO',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: snapshot.data['status'] == true
-                          ? Colors.greenAccent[700]
-                          : Colors.red),
-                )
+                _textStatus(snapshot),
               ],
             );
           }
@@ -342,16 +279,7 @@ class PizzaMaitaTile extends StatelessWidget {
                       child: _buildItens(context, 'images/lojaI.jpg',
                           'Pizzaria Delivery', 'Pizza Oxente')),
                 ),
-                Text(
-                  snapshot.data['status'] == true
-                      ? 'Estabelecimento ABERTO'
-                      : 'Estabelecimento FECHADO',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: snapshot.data['status'] == true
-                          ? Colors.greenAccent[700]
-                          : Colors.red),
-                )
+                _textStatus(snapshot),
               ],
             );
           }
@@ -387,16 +315,7 @@ class LeChefTile extends StatelessWidget {
                       child: _buildItens(
                           context, 'images/lojaH.jpg', 'Pizzaria', 'Chef')),
                 ),
-                Text(
-                  snapshot.data['status'] == true
-                      ? 'Estabelecimento ABERTO'
-                      : 'Estabelecimento FECHADO',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: snapshot.data['status'] == true
-                          ? Colors.greenAccent[700]
-                          : Colors.red),
-                )
+                _textStatus(snapshot),
               ],
             );
           }
@@ -432,16 +351,7 @@ class LojaJ extends StatelessWidget {
                       child: _buildItens(context, 'images/lojaJ.jpg', 'Doceria',
                           'Sabores Delícia')),
                 ),
-                Text(
-                  snapshot.data['status'] == true
-                      ? 'Estabelecimento ABERTO'
-                      : 'Estabelecimento FECHADO',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: snapshot.data['status'] == true
-                          ? Colors.greenAccent[700]
-                          : Colors.red),
-                )
+                _textStatus(snapshot),
               ],
             );
           }
@@ -477,16 +387,7 @@ class LojaL extends StatelessWidget {
                       child: _buildItens(context, 'images/lojaL.jpg',
                           'Farmácia', 'Pague Pouco')),
                 ),
-                Text(
-                  snapshot.data['status'] == true
-                      ? 'Estabelecimento ABERTO'
-                      : 'Estabelecimento FECHADO',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: snapshot.data['status'] == true
-                          ? Colors.greenAccent[700]
-                          : Colors.red),
-                )
+                _textStatus(snapshot),
               ],
             );
           }
@@ -522,16 +423,7 @@ class LojaM extends StatelessWidget {
                       child: _buildItens(context, 'images/lojaM.jpg', 'Padaria',
                           'Sabores do Pão')),
                 ),
-                Text(
-                  snapshot.data['status'] == true
-                      ? 'Estabelecimento ABERTO'
-                      : 'Estabelecimento FECHADO',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: snapshot.data['status'] == true
-                          ? Colors.greenAccent[700]
-                          : Colors.red),
-                )
+                _textStatus(snapshot),
               ],
             );
           }
@@ -567,16 +459,7 @@ class LojaN extends StatelessWidget {
                     child: _buildItens(context, 'images/lojaN.jpg', 'Armazém',
                         'João Ferragens')),
               ),
-              Text(
-                snapshot.data['status'] == true
-                    ? 'Estabelecimento ABERTO'
-                    : 'Estabelecimento FECHADO',
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: snapshot.data['status'] == true
-                        ? Colors.greenAccent[700]
-                        : Colors.red),
-              )
+              _textStatus(snapshot),
             ],
           );
         });
@@ -609,16 +492,7 @@ class LojaO extends StatelessWidget {
                       child: _buildItens(context, 'images/lojaO.jpg', 'Bar',
                           'Tô Perto de Casa')),
                 ),
-                Text(
-                  snapshot.data['status'] == true
-                      ? 'Estabelecimento ABERTO'
-                      : 'Estabelecimento FECHADO',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: snapshot.data['status'] == true
-                          ? Colors.greenAccent[700]
-                          : Colors.red),
-                )
+                _textStatus(snapshot),
               ],
             );
           }
@@ -654,16 +528,7 @@ class LojaP extends StatelessWidget {
                       child: _buildItens(context, 'images/lojaP.jpg',
                           'Papelaria', 'Happylândia')),
                 ),
-                Text(
-                  snapshot.data['status'] == true
-                      ? 'Estabelecimento ABERTO'
-                      : 'Estabelecimento FECHADO',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: snapshot.data['status'] == true
-                          ? Colors.greenAccent[700]
-                          : Colors.red),
-                )
+                _textStatus(snapshot),
               ],
             );
           }
@@ -672,48 +537,56 @@ class LojaP extends StatelessWidget {
 }
 
 Widget _buildItens(context, imgStore, preName, storeName) {
-  return //Card(
-      //margin: EdgeInsets.symmetric(horizontal: 2, vertical: 1),
-      //elevation: 1,
-      /*child:*/ Padding(
-          padding: EdgeInsets.all(4),
-          child: Container(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Container(
-                    child: Row(children: [
-                  Container(
-                    height: 70,
-                    width: 70,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(image: AssetImage(imgStore)),
-                      border: Border.all(
-                          color: Colors.grey[400],
-                          style: BorderStyle.solid,
-                          width: 1),
-                      borderRadius: BorderRadius.circular(4),
-                    ),
+  return Padding(
+      padding: EdgeInsets.all(4),
+      child: Container(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Container(
+                child: Row(children: [
+              Container(
+                height: 70,
+                width: 70,
+                decoration: BoxDecoration(
+                  image: DecorationImage(image: AssetImage(imgStore)),
+                  border: Border.all(
+                      color: Colors.grey[400],
+                      style: BorderStyle.solid,
+                      width: 1),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+              ),
+              SizedBox(width: 10),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(preName,
+                      style: TextStyle(fontSize: 14, color: Colors.grey[600])),
+                  Text(
+                    storeName,
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey[800]),
                   ),
-                  SizedBox(width: 10),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(preName,
-                          style:
-                              TextStyle(fontSize: 14, color: Colors.grey[600])),
-                      Text(
-                        storeName,
-                        style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.grey[800]),
-                      ),
-                    ],
-                  ),
-                ])),
-                //Icon(Icons.store, color: Colors.grey[500], size: 18),
-              ],
-            ),
-          )); //);
+                ],
+              ),
+            ])),
+          ],
+        ),
+      ));
+}
+
+Widget _textStatus(snapshot) {
+  return Text(
+    snapshot.data['status'] == true
+        ? 'Estabelecimento ABERTO'
+        : 'Estabelecimento FECHADO',
+    style: TextStyle(
+        fontWeight: FontWeight.bold,
+        color: snapshot.data['status'] == true
+            ? Colors.greenAccent[700]
+            : Colors.red),
+  );
 }

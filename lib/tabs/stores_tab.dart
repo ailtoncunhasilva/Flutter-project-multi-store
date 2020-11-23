@@ -5,6 +5,14 @@ import 'package:delivery_morenope/screens/orderstore_screen.dart';
 import 'package:delivery_morenope/tiles/product_tile.dart';
 import 'package:flutter/material.dart';
 
+final BoxDecoration decoration = BoxDecoration(
+  color: Colors.white,
+  border: Border.all(color: Colors.white, width: 1),
+  borderRadius: BorderRadius.circular(15),
+);
+
+final Text text = Text('MEUS\nPEDIDOS', textAlign: TextAlign.center);
+
 class StoreDalenaTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -18,12 +26,10 @@ class StoreDalenaTab extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white, width: 2),
-                  borderRadius: BorderRadius.circular(15)),
+              decoration: decoration,
               child: FlatButton(
-                child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-                textColor: Colors.white,
+                child: text,
+                textColor: Theme.of(context).primaryColor,
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => OrdersDalenaScreen()));
@@ -70,12 +76,10 @@ class StoreDeliciaTab extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white, width: 2),
-                  borderRadius: BorderRadius.circular(15)),
+              decoration: decoration,
               child: FlatButton(
-                child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-                textColor: Colors.white,
+                child: text,
+                textColor: Theme.of(context).primaryColor,
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => OrdersDeliciaScreen()));
@@ -122,12 +126,10 @@ class StoreDindinTab extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white, width: 2),
-                  borderRadius: BorderRadius.circular(15)),
+              decoration: decoration,
               child: FlatButton(
-                child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-                textColor: Colors.white,
+                child: text,
+                textColor: Theme.of(context).primaryColor,
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => OrdersDindinScreen()));
@@ -174,12 +176,10 @@ class StoreMagoEspetinhoTab extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white, width: 2),
-                  borderRadius: BorderRadius.circular(15)),
+              decoration: decoration,
               child: FlatButton(
-                child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-                textColor: Colors.white,
+                child: text,
+                textColor: Theme.of(context).primaryColor,
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => OrdersMagoEspetinhoScreen()));
@@ -204,8 +204,8 @@ class StoreMagoEspetinhoTab extends StatelessWidget {
           }),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.of(context).push(
-              MaterialPageRoute(builder: (context) => CartMagoEspetinhoScreen()));
+          Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => CartMagoEspetinhoScreen()));
         },
         child: Icon(Icons.shopping_cart),
       ),
@@ -226,12 +226,10 @@ class StorePalhocaTab extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white, width: 2),
-                  borderRadius: BorderRadius.circular(15)),
+              decoration: decoration,
               child: FlatButton(
-                child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-                textColor: Colors.white,
+                child: text,
+                textColor: Theme.of(context).primaryColor,
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => OrdersPalhocaScreen()));
@@ -278,12 +276,10 @@ class StoreBoticarioTab extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white, width: 2),
-                  borderRadius: BorderRadius.circular(15)),
+              decoration: decoration,
               child: FlatButton(
-                child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-                textColor: Colors.white,
+                child: text,
+                textColor: Theme.of(context).primaryColor,
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => OrdersBoticarioScreen()));
@@ -330,12 +326,10 @@ class StoreMinhaCoxinhaFavoritaTab extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white, width: 2),
-                  borderRadius: BorderRadius.circular(15)),
+              decoration: decoration,
               child: FlatButton(
-                child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-                textColor: Colors.white,
+                child: text,
+                textColor: Theme.of(context).primaryColor,
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) =>
@@ -384,16 +378,13 @@ class StoreLeChefTab extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white, width: 2),
-                  borderRadius: BorderRadius.circular(15)),
+              decoration: decoration,
               child: FlatButton(
-                child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-                textColor: Colors.white,
+                child: text,
+                textColor: Theme.of(context).primaryColor,
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) =>
-                          OrdersLeChefScreen()));
+                      builder: (context) => OrdersLeChefScreen()));
                 },
               ),
             ),
@@ -409,15 +400,14 @@ class StoreLeChefTab extends StatelessWidget {
               return ListView.builder(
                   itemCount: snapshot.data.documents.length,
                   itemBuilder: (context, index) {
-                    return ProductLeChefTile(
-                        ProductData.fromDocument(
-                            snapshot.data.documents[index]));
+                    return ProductLeChefTile(ProductData.fromDocument(
+                        snapshot.data.documents[index]));
                   });
           }),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => CartLeChefScreen()));
+          Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) => CartLeChefScreen()));
         },
         child: Icon(Icons.shopping_cart),
       ),
@@ -426,58 +416,48 @@ class StoreLeChefTab extends StatelessWidget {
 }
 
 class StorePizzaMaitaTab extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pizza Maita', style: TextStyle(
-          fontSize: 20,
-          color: Colors.white
+        title: Text(
+          'Pizza Maita',
+          style: TextStyle(fontSize: 20, color: Colors.white),
         ),
-       ),
-       actions: <Widget>[
-         Padding(
-           padding: const EdgeInsets.all(8.0),
-           child: Container(
-             decoration: BoxDecoration(
-               border: Border.all(color: Colors.white, width: 2),
-               borderRadius: BorderRadius.circular(15)
-             ),
-             child: FlatButton(
-               child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-               textColor: Colors.white,
-               onPressed: (){
-                 Navigator.of(context).push(
-                   MaterialPageRoute(builder: (context)=>OrdersPizzaMaitaScreen())
-                 );                
-               },
-             ),
-           ),
-         )
-       ],
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              decoration: decoration,
+              child: FlatButton(
+                child: text,
+                textColor: Theme.of(context).primaryColor,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => OrdersPizzaMaitaScreen()));
+                },
+              ),
+            ),
+          )
+        ],
       ),
       body: FutureBuilder<QuerySnapshot>(
-        future: Firestore.instance.collection('store09').getDocuments(),
-        builder: (context, snapshot){
-          if(!snapshot.hasData)
-          return Center(child: CircularProgressIndicator());
-          else
-          return ListView.builder(
-            itemCount: snapshot.data.documents.length,
-            itemBuilder: (context, index){
-              return ProductPizzaMaitaTile(
-                ProductData.fromDocument(snapshot.data.documents[index])
-              );
-            }
-          );
-        }
-      ),
+          future: Firestore.instance.collection('store09').getDocuments(),
+          builder: (context, snapshot) {
+            if (!snapshot.hasData)
+              return Center(child: CircularProgressIndicator());
+            else
+              return ListView.builder(
+                  itemCount: snapshot.data.documents.length,
+                  itemBuilder: (context, index) {
+                    return ProductPizzaMaitaTile(ProductData.fromDocument(
+                        snapshot.data.documents[index]));
+                  });
+          }),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){
+        onPressed: () {
           Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => CartPizzaMaitaScreen())
-          );
+              MaterialPageRoute(builder: (context) => CartPizzaMaitaScreen()));
         },
         child: Icon(Icons.shopping_cart),
       ),
@@ -486,58 +466,48 @@ class StorePizzaMaitaTab extends StatelessWidget {
 }
 
 class StoreLojaJTab extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sabores Delicia', style: TextStyle(
-          fontSize: 20,
-          color: Colors.white
+        title: Text(
+          'Sabores Delicia',
+          style: TextStyle(fontSize: 20, color: Colors.white),
         ),
-       ),
-       actions: <Widget>[
-         Padding(
-           padding: const EdgeInsets.all(8.0),
-           child: Container(
-             decoration: BoxDecoration(
-               border: Border.all(color: Colors.white, width: 2),
-               borderRadius: BorderRadius.circular(15)
-             ),
-             child: FlatButton(
-               child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-               textColor: Colors.white,
-               onPressed: (){
-                 Navigator.of(context).push(
-                   MaterialPageRoute(builder: (context)=>OrdersLojaJScreen())
-                 );                
-               },
-             ),
-           ),
-         )
-       ],
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              decoration: decoration,
+              child: FlatButton(
+                child: text,
+                textColor: Theme.of(context).primaryColor,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => OrdersLojaJScreen()));
+                },
+              ),
+            ),
+          )
+        ],
       ),
       body: FutureBuilder<QuerySnapshot>(
-        future: Firestore.instance.collection('store10').getDocuments(),
-        builder: (context, snapshot){
-          if(!snapshot.hasData)
-          return Center(child: CircularProgressIndicator());
-          else
-          return ListView.builder(
-            itemCount: snapshot.data.documents.length,
-            itemBuilder: (context, index){
-              return ProductLojaJTile(
-                ProductData.fromDocument(snapshot.data.documents[index])
-              );
-            }
-          );
-        }
-      ),
+          future: Firestore.instance.collection('store10').getDocuments(),
+          builder: (context, snapshot) {
+            if (!snapshot.hasData)
+              return Center(child: CircularProgressIndicator());
+            else
+              return ListView.builder(
+                  itemCount: snapshot.data.documents.length,
+                  itemBuilder: (context, index) {
+                    return ProductLojaJTile(ProductData.fromDocument(
+                        snapshot.data.documents[index]));
+                  });
+          }),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => CartLojaJScreen())
-          );
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => CartLojaJScreen()));
         },
         child: Icon(Icons.shopping_cart),
       ),
@@ -546,58 +516,48 @@ class StoreLojaJTab extends StatelessWidget {
 }
 
 class StoreLojaLTab extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pague Pouco', style: TextStyle(
-          fontSize: 20,
-          color: Colors.white
+        title: Text(
+          'Pague Pouco',
+          style: TextStyle(fontSize: 20, color: Colors.white),
         ),
-       ),
-       actions: <Widget>[
-         Padding(
-           padding: const EdgeInsets.all(8.0),
-           child: Container(
-             decoration: BoxDecoration(
-               border: Border.all(color: Colors.white, width: 2),
-               borderRadius: BorderRadius.circular(15)
-             ),
-             child: FlatButton(
-               child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-               textColor: Colors.white,
-               onPressed: (){
-                 Navigator.of(context).push(
-                   MaterialPageRoute(builder: (context)=>OrdersLojaLScreen())
-                 );                
-               },
-             ),
-           ),
-         )
-       ],
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              decoration: decoration,
+              child: FlatButton(
+                child: text,
+                textColor: Theme.of(context).primaryColor,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => OrdersLojaLScreen()));
+                },
+              ),
+            ),
+          )
+        ],
       ),
       body: FutureBuilder<QuerySnapshot>(
-        future: Firestore.instance.collection('store11').getDocuments(),
-        builder: (context, snapshot){
-          if(!snapshot.hasData)
-          return Center(child: CircularProgressIndicator());
-          else
-          return ListView.builder(
-            itemCount: snapshot.data.documents.length,
-            itemBuilder: (context, index){
-              return ProductLojaLTile(
-                ProductData.fromDocument(snapshot.data.documents[index])
-              );
-            }
-          );
-        }
-      ),
+          future: Firestore.instance.collection('store11').getDocuments(),
+          builder: (context, snapshot) {
+            if (!snapshot.hasData)
+              return Center(child: CircularProgressIndicator());
+            else
+              return ListView.builder(
+                  itemCount: snapshot.data.documents.length,
+                  itemBuilder: (context, index) {
+                    return ProductLojaLTile(ProductData.fromDocument(
+                        snapshot.data.documents[index]));
+                  });
+          }),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => CartLojaLScreen())
-          );
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => CartLojaLScreen()));
         },
         child: Icon(Icons.shopping_cart),
       ),
@@ -606,58 +566,48 @@ class StoreLojaLTab extends StatelessWidget {
 }
 
 class StoreLojaMTab extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sabores do Pão', style: TextStyle(
-          fontSize: 20,
-          color: Colors.white
+        title: Text(
+          'Sabores do Pão',
+          style: TextStyle(fontSize: 20, color: Colors.white),
         ),
-       ),
-       actions: <Widget>[
-         Padding(
-           padding: const EdgeInsets.all(8.0),
-           child: Container(
-             decoration: BoxDecoration(
-               border: Border.all(color: Colors.white, width: 2),
-               borderRadius: BorderRadius.circular(15)
-             ),
-             child: FlatButton(
-               child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-               textColor: Colors.white,
-               onPressed: (){
-                 Navigator.of(context).push(
-                   MaterialPageRoute(builder: (context)=>OrdersLojaMScreen())
-                 );                
-               },
-             ),
-           ),
-         )
-       ],
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              decoration: decoration,
+              child: FlatButton(
+                child: text,
+                textColor: Theme.of(context).primaryColor,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => OrdersLojaMScreen()));
+                },
+              ),
+            ),
+          )
+        ],
       ),
       body: FutureBuilder<QuerySnapshot>(
-        future: Firestore.instance.collection('store12').getDocuments(),
-        builder: (context, snapshot){
-          if(!snapshot.hasData)
-          return Center(child: CircularProgressIndicator());
-          else
-          return ListView.builder(
-            itemCount: snapshot.data.documents.length,
-            itemBuilder: (context, index){
-              return ProductLojaMTile(
-                ProductData.fromDocument(snapshot.data.documents[index])
-              );
-            }
-          );
-        }
-      ),
+          future: Firestore.instance.collection('store12').getDocuments(),
+          builder: (context, snapshot) {
+            if (!snapshot.hasData)
+              return Center(child: CircularProgressIndicator());
+            else
+              return ListView.builder(
+                  itemCount: snapshot.data.documents.length,
+                  itemBuilder: (context, index) {
+                    return ProductLojaMTile(ProductData.fromDocument(
+                        snapshot.data.documents[index]));
+                  });
+          }),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => CartLojaMScreen())
-          );
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => CartLojaMScreen()));
         },
         child: Icon(Icons.shopping_cart),
       ),
@@ -666,58 +616,48 @@ class StoreLojaMTab extends StatelessWidget {
 }
 
 class StoreLojaNTab extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('João Ferragens', style: TextStyle(
-          fontSize: 20,
-          color: Colors.white
+        title: Text(
+          'João Ferragens',
+          style: TextStyle(fontSize: 20, color: Colors.white),
         ),
-       ),
-       actions: <Widget>[
-         Padding(
-           padding: const EdgeInsets.all(8.0),
-           child: Container(
-             decoration: BoxDecoration(
-               border: Border.all(color: Colors.white, width: 2),
-               borderRadius: BorderRadius.circular(15)
-             ),
-             child: FlatButton(
-               child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-               textColor: Colors.white,
-               onPressed: (){
-                 Navigator.of(context).push(
-                   MaterialPageRoute(builder: (context)=>OrdersLojaNScreen())
-                 );                
-               },
-             ),
-           ),
-         )
-       ],
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              decoration: decoration,
+              child: FlatButton(
+                child: text,
+                textColor: Theme.of(context).primaryColor,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => OrdersLojaNScreen()));
+                },
+              ),
+            ),
+          )
+        ],
       ),
       body: FutureBuilder<QuerySnapshot>(
-        future: Firestore.instance.collection('store13').getDocuments(),
-        builder: (context, snapshot){
-          if(!snapshot.hasData)
-          return Center(child: CircularProgressIndicator());
-          else
-          return ListView.builder(
-            itemCount: snapshot.data.documents.length,
-            itemBuilder: (context, index){
-              return ProductLojaNTile(
-                ProductData.fromDocument(snapshot.data.documents[index])
-              );
-            }
-          );
-        }
-      ),
+          future: Firestore.instance.collection('store13').getDocuments(),
+          builder: (context, snapshot) {
+            if (!snapshot.hasData)
+              return Center(child: CircularProgressIndicator());
+            else
+              return ListView.builder(
+                  itemCount: snapshot.data.documents.length,
+                  itemBuilder: (context, index) {
+                    return ProductLojaNTile(ProductData.fromDocument(
+                        snapshot.data.documents[index]));
+                  });
+          }),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => CartLojaNScreen())
-          );
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => CartLojaNScreen()));
         },
         child: Icon(Icons.shopping_cart),
       ),
@@ -726,58 +666,48 @@ class StoreLojaNTab extends StatelessWidget {
 }
 
 class StoreLojaOTab extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tô Perto de Casa', style: TextStyle(
-          fontSize: 20,
-          color: Colors.white
+        title: Text(
+          'Tô Perto de Casa',
+          style: TextStyle(fontSize: 20, color: Colors.white),
         ),
-       ),
-       actions: <Widget>[
-         Padding(
-           padding: const EdgeInsets.all(8.0),
-           child: Container(
-             decoration: BoxDecoration(
-               border: Border.all(color: Colors.white, width: 2),
-               borderRadius: BorderRadius.circular(15)
-             ),
-             child: FlatButton(
-               child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-               textColor: Colors.white,
-               onPressed: (){
-                 Navigator.of(context).push(
-                   MaterialPageRoute(builder: (context)=>OrdersLojaOScreen())
-                 );                
-               },
-             ),
-           ),
-         )
-       ],
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              decoration: decoration,
+              child: FlatButton(
+                child: text,
+                textColor: Theme.of(context).primaryColor,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => OrdersLojaOScreen()));
+                },
+              ),
+            ),
+          )
+        ],
       ),
       body: FutureBuilder<QuerySnapshot>(
-        future: Firestore.instance.collection('store14').getDocuments(),
-        builder: (context, snapshot){
-          if(!snapshot.hasData)
-          return Center(child: CircularProgressIndicator());
-          else
-          return ListView.builder(
-            itemCount: snapshot.data.documents.length,
-            itemBuilder: (context, index){
-              return ProductLojaOTile(
-                ProductData.fromDocument(snapshot.data.documents[index])
-              );
-            }
-          );
-        }
-      ),
+          future: Firestore.instance.collection('store14').getDocuments(),
+          builder: (context, snapshot) {
+            if (!snapshot.hasData)
+              return Center(child: CircularProgressIndicator());
+            else
+              return ListView.builder(
+                  itemCount: snapshot.data.documents.length,
+                  itemBuilder: (context, index) {
+                    return ProductLojaOTile(ProductData.fromDocument(
+                        snapshot.data.documents[index]));
+                  });
+          }),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => CartLojaOScreen())
-          );
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => CartLojaOScreen()));
         },
         child: Icon(Icons.shopping_cart),
       ),
@@ -786,65 +716,54 @@ class StoreLojaOTab extends StatelessWidget {
 }
 
 class StoreLojaPTab extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Happylândia', style: TextStyle(
-          fontSize: 20,
-          color: Colors.white
+        title: Text(
+          'Happylândia',
+          style: TextStyle(fontSize: 20, color: Colors.white),
         ),
-       ),
-       actions: <Widget>[
-         Padding(
-           padding: const EdgeInsets.all(8.0),
-           child: Container(
-             decoration: BoxDecoration(
-               border: Border.all(color: Colors.white, width: 2),
-               borderRadius: BorderRadius.circular(15)
-             ),
-             child: FlatButton(
-               child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-               textColor: Colors.white,
-               onPressed: (){
-                 Navigator.of(context).push(
-                   MaterialPageRoute(builder: (context)=>OrdersLojaPScreen())
-                 );                
-               },
-             ),
-           ),
-         )
-       ],
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              decoration: decoration,
+              child: FlatButton(
+                child: text,
+                textColor: Theme.of(context).primaryColor,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => OrdersLojaPScreen()));
+                },
+              ),
+            ),
+          )
+        ],
       ),
       body: FutureBuilder<QuerySnapshot>(
-        future: Firestore.instance.collection('store15').getDocuments(),
-        builder: (context, snapshot){
-          if(!snapshot.hasData)
-          return Center(child: CircularProgressIndicator());
-          else
-          return ListView.builder(
-            itemCount: snapshot.data.documents.length,
-            itemBuilder: (context, index){
-              return ProductLojaPTile(
-                ProductData.fromDocument(snapshot.data.documents[index])
-              );
-            }
-          );
-        }
-      ),
+          future: Firestore.instance.collection('store15').getDocuments(),
+          builder: (context, snapshot) {
+            if (!snapshot.hasData)
+              return Center(child: CircularProgressIndicator());
+            else
+              return ListView.builder(
+                  itemCount: snapshot.data.documents.length,
+                  itemBuilder: (context, index) {
+                    return ProductLojaPTile(ProductData.fromDocument(
+                        snapshot.data.documents[index]));
+                  });
+          }),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => CartLojaPScreen())
-          );
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => CartLojaPScreen()));
         },
         child: Icon(Icons.shopping_cart),
       ),
     );
   }
 }
-
 
 /*class StorePizzaMaitaTab extends StatelessWidget {
 
@@ -866,8 +785,8 @@ class StoreLojaPTab extends StatelessWidget {
                borderRadius: BorderRadius.circular(15)
              ),
              child: FlatButton(
-               child: Text('MEUS\nPEDIDOS', textAlign: TextAlign.center),
-               textColor: Colors.white,
+               child: text,
+               textColor: Theme.of(context).primaryColor,
                onPressed: (){
                  Navigator.of(context).push(
                    MaterialPageRoute(builder: (context)=>OrdersMudarScreen())

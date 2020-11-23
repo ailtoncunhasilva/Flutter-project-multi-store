@@ -124,7 +124,7 @@ class MyAppBar extends StatelessWidget {
                   Text(
                     'Olá, ${!model.isLoggedIn() ? "" : model.userData['name']}',
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 14,
                       color: Colors.white,
                     ),
                   ),
@@ -151,7 +151,7 @@ class MyAppBar extends StatelessWidget {
             child: GestureDetector(
               child: Text(!model.isLoggedIn() ? 'Entre ou cadastre-se' : 'Sair',
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 12,
                     color: Colors.white,
                     //fontFamily: 'Anton',
                   )),
@@ -199,14 +199,14 @@ class MyFlexibleAppBar extends StatelessWidget {
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
-                              fontSize: 20,
+                              fontSize: 18,
                             ),
                           ),
                           Text(
                             'Moreno-PE',
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 20,
+                              fontSize: 18,
                               fontFamily: 'Anton',
                             ),
                           )
