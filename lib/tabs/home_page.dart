@@ -5,6 +5,13 @@ import 'package:delivery_morenope/tiles/stores_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 
+final BoxShadow shadow = BoxShadow(
+  color: Colors.blue[900],
+  offset: Offset(3, -2),
+  blurRadius: 6,
+  spreadRadius: 6,
+);
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -126,6 +133,7 @@ class MyAppBar extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 14,
                       color: Colors.white,
+                      shadows: [shadow],
                     ),
                   ),
                   Container(
@@ -153,7 +161,7 @@ class MyAppBar extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 12,
                     color: Colors.white,
-                    //fontFamily: 'Anton',
+                    shadows: [shadow],
                   )),
               onTap: () {
                 if (!model.isLoggedIn())
@@ -200,6 +208,7 @@ class MyFlexibleAppBar extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                               fontSize: 18,
+                              shadows: [shadow],
                             ),
                           ),
                           Text(
@@ -208,6 +217,7 @@ class MyFlexibleAppBar extends StatelessWidget {
                               color: Colors.white,
                               fontSize: 18,
                               fontFamily: 'Anton',
+                              shadows: [shadow],
                             ),
                           )
                         ]),
@@ -223,6 +233,7 @@ class MyFlexibleAppBar extends StatelessWidget {
                             fontSize: 32,
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
+                            shadows: [shadow],
                           ),
                         ),
                         Container(
@@ -235,6 +246,7 @@ class MyFlexibleAppBar extends StatelessWidget {
                           style: TextStyle(
                             color: Colors.white,
                             fontFamily: 'SansitaSwashed',
+                            shadows: [shadow],
                           ),
                         ),
                         SizedBox(height: 1),
